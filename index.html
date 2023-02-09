@@ -1,12 +1,222 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./breakpointmobile.css">
+  <link rel="stylesheet" href="./breakpointtablet.css">
+  <title>Proyecto Final</title>
+</head>
+<header class="centrar-titulo">
+  <h1>Tienda de <span>Muebles</span></h1>
+</header>
 
-        <title>Mi primer html</title>
-    </head>
+<!-- aqui empieza el navegador -->
 
-    
+<div class="border-top py-4">
+  <div class="navbar navbar-expand-lg container navbar-light">
+    <a href="#" class="navbar-brand d-lg-none fs-2 fw-bold text-uppercase">
+      <h2 class="center-heading">Tienda de <span>Muebles</span></h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion"
+      aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navegacion">
+      <nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
+        <a class="menu text-decoration-none nav-link" href="#">Inicio</a>
+        <a class="menu text-decoration-none nav-link" href="#">Nosotros</a>
+        <a class="menu text-decoration-none nav-link" href="#">Tienda</a>
+        <a class="menu text-decoration-none nav-link" href="#">Blog</a>
+        <a class="menu text-decoration-none nav-link" href="#">Galeria</a>
+        <a class="menu text-decoration-none nav-link" href="#">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- aqui termina el navegador -->
+
 <body>
-    <h1>Hola HTML</h1>
+  <main>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/principal.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/categoria1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/categoria3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <!-- <figure class="principal-responsive">
+      <img class="hero" src="./imagenes/principal.jpg" alt="Esta es una linda sala">
+    </figure> -->
+    <h2 class="centrar-subtitulo">Nuestros productos</h2>
+
+    <!-- aqui comienzan las secciones -->
+
+    <section class="container">
+      <div class="grid-container">
+        <div class="container-image__1">
+          <img class="size-image" src="./imagenes/producto1.jpg" alt="producto 1">
+        </div>
+        <div class="features-product__1 features-radius">
+          <h2 class="color-fuente" id="centrar-titulo__div">Producto 1</h2>
+          <p class="color-fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam
+            exercitationem natus. Inventore, atque aspernatur
+            perspiciatis placeat voluptate ullam labore</p>
+          <h2 class="color-fuente">$12,000.00</h2>
+          <button id="estilo-button">Agregar al carrito</button>
+        </div>
+        <div class="container-image__2">
+          <img class="size-image" src="./imagenes/producto2.jpg" alt="producto 2">
+        </div>
+        <div class="features-product__2 features-radius">
+          <h2 class="color-fuente">Producto 2</h2>
+          <p class="color-fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam
+            exercitationem natus. Inventore, atque aspernatur
+            perspiciatis placeat voluptate ullam labore</p>
+          <h2 class="color-fuente">$12,000.00</h2>
+          <button id="estilo-button">Agregar al carrito</button>
+        </div>
+        <div class="container-image__3">
+          <img class="size-image" src="./imagenes/producto3.jpg" alt="producto 3">
+        </div>
+        <div class="features-product__3 features-radius">
+          <h2 class="color-fuente">Producto 3</h2>
+          <p class="color-fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam
+            exercitationem natus. Inventore, atque aspernatur
+            perspiciatis placeat voluptate ullam labore</p>
+          <h2 class="color-fuente">$12,000.00</h2>
+          <button id="estilo-button">Agregar al carrito</button>
+        </div>
+        <div class="container-image__4">
+          <img class="size-image" src="./imagenes/producto4.jpg" alt="producto 4">
+        </div>
+        <div class="features-product__4 features-radius">
+          <h2 class="color-fuente">Producto 4</h2>
+          <p class="color-fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam
+            exercitationem natus. Inventore, atque aspernatur</p>
+          <h2 class="color-fuente">$12,000.00</h2>
+          <button id="estilo-button">Agregar al carrito</button>
+        </div>
+        <div class="container-image__5">
+          <img class="size-image" src="./imagenes/producto5.jpg" alt="producto 5">
+        </div>
+        <div class="features-product__5 features-radius">
+          <h2 class="color-fuente">Producto 5</h2>
+          <p class="color-fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam
+            exercitationem natus. Inventore, atque aspernatur</p>
+          <h2 class="color-fuente">$12,000.00</h2>
+          <button id="estilo-button">Agregar al carrito</button>
+        </div>
+        <div class="container-image__6">
+          <img class="size-image" src="./imagenes/producto6.jpg" alt="producto 6">
+        </div>
+        <div class="features-product__6 features-radius">
+          <h2 class="color-fuente">Producto 6</h2>
+          <p class="color-fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam
+            exercitationem natus. Inventore, atque aspernatur</p>
+          <h2 class="color-fuente">$12,000.00</h2>
+          <button id="estilo-button">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- aqui terminan las secciones -->
+
+    <h3 class="centrar-subtitulotres" id="Categorias-style">Categorias productos</h3>
+
+    <section>
+      <div class="ultimas-categorias">
+        <div class="media-ajuste-1">
+          <img class="categoria-ajuste" src="./imagenes/categoria1.jpg" alt="lindo escritorio">
+          <h2 class="subtitulo-categorias">Oficina</h2>
+        </div>
+        <div class="media-ajuste-2">
+          <img class="categoria-ajuste" src="./imagenes/categoria2.jpg" alt="bonita television">
+          <h2 class="subtitulo-categorias">Hogar</h2>
+        </div>
+        <div class="media-ajuste-3">
+          <img class="categoria-ajuste" src="./imagenes/categoria3.jpg" alt="lindo comedor">
+          <h2 class="subtitulo-categorias">Cocina</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
 </body>
+<footer>
+  <div id="container-footer">
+    <div>
+      <ul class="containers-footer">
+        <h2>Categorias</h2>
+        <li><a href="#">Cocina</a></li>
+        <li><a href="#">Oficina</a></li>
+        <li><a href="#">Jardin</a></li>
+        <li><a href="#">Cochera</a></li>
+        <li><a href="#">Dormitorios</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="containers-footer" id="centrar-divfot">
+        <h2>Sobre nosotros</h2>
+        <li><a href="#">Nuestra historia</a></li>
+        <li><a href="#">Mision, vision, valores</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Politica de privacidad</a></li>
+        <li><a href="#">Terminos de servicio</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="containers-footer">
+        <h2>Soporte</h2>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#">Ayuda en linea</a></li>
+        <li><a href="#">Confianza y seguridad</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 </html>

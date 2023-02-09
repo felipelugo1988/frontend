@@ -1,0 +1,262 @@
+:root {
+    --primary-color: #037BC0;
+    --secundary-color: #8cbc00;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    padding: 2rem;
+}
+
+.centrar-titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.centrar-titulo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+}
+
+.centrar-titulo span {
+    color:  var(--primary-color);
+}
+
+.container-nav {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.container-nav a {
+    padding: 1.0rem;
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    width: 100%;
+    background-size: cover;
+}
+
+.centrar-subtitulo {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    font-size: 4rem;
+}
+
+/* aqui comienza las secciones */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 22% 22% 12% 22% 12%;
+    row-gap: 0.4rem;
+    column-gap: 0.7rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#estilo-button {
+    background-color: var(--secundary-color);
+    border: none;
+    border-radius: 0.5rem;
+    width: 25rem;
+    color: white;
+}
+
+.color-fuente {
+    color: white;
+}
+
+.container-image__1 {
+    grid-column: 1 / 5;
+}
+
+.features-product__1 {
+    background-color: var(--primary-color);
+    margin-left: -1rem;
+    height: 30rem;
+    grid-column: 5 / 7;
+    text-align: center;
+}
+
+#centrar-titulo__div {
+    margin-top: 5rem;
+}
+
+.container-image__2 {
+    grid-column: 1 / 4; 
+    grid-row: 2; 
+    width: 100%;
+}
+
+.features-product__2 {
+    grid-column: 1 / 4; 
+    grid-row: 3; 
+    margin-bottom: 20rem;
+    margin-top: -2rem;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    }
+
+.container-image__3 {
+    grid-column: 4 / 7;
+    grid-row: 2;
+    width: 100%;
+}
+
+.features-product__3 {
+    grid-column: 4 / 7;
+    grid-row: 3;
+    margin-top: -2rem;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+
+.container-image__4 {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    }
+
+.features-product__4 {
+    grid-column: 1 / 3;
+    grid-row: 5;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.container-image__5 {
+    grid-column: 3 / 5;
+    grid-row: 4;
+}
+
+.features-product__5 {
+    grid-column: 3 / 5;
+    grid-row: 5;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-top: -2rem;
+
+}
+
+.container-image__6 {
+    grid-column: 5 / 7;
+    grid-row: 4;
+}  
+
+.features-product__6 {
+    grid-column: 5 / 7;
+    grid-row: 5;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-top: -2rem;
+
+}
+
+.size-image {
+    width: 100%;
+    height: 30rem;
+    border-radius: 1.5rem;
+}
+
+.features-radius {
+    border-radius: 1.5rem;
+}
+
+/* aqui terminan las secciones */
+
+.centrar-subtitulotres {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    font-size: 4rem;
+    margin-top: -15rem;
+}
+
+/* aqui empiezan las categorias */
+
+.ultimas-categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: .5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.media-ajuste-1 {
+    height: 150px;
+    
+}
+
+
+.categoria-ajuste {
+    width: 100%;
+    height: 20rem;
+    border-radius: 1.5rem;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.categoria-ajuste:hover {
+    transform: scale(1.2);
+}
+
+
+
+.subtitulo-categorias {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+#container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4rem;
+    text-align: center;
+}
+.containers-footer {
+    list-style: none;
+}
+
+.containers-footer a {
+    padding: 1.0rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+#centrar-divfot {
+    margin-left: 8rem;
+}

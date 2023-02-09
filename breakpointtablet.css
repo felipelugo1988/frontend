@@ -1,0 +1,159 @@
+@media (max-width: 768px) {
+.principal-responsive {
+    width: 55rem;
+    margin-left: 2.5rem;
+}
+}
+
+/* aqui termina la imagen principal */
+
+
+/* aqui comienza la primer seccion */
+
+
+@media (max-width: 728px) {
+
+.grid-container {
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(12, 8.33%);
+    row-gap: 0.4rem;
+    column-gap: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.container-image__1 {
+    grid-column: 2 / 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: -1rem;
+}
+
+.size-image {
+    height: 100%;
+}
+
+.features-product__1 {
+    grid-column: 2 / 8;
+    grid-row: 2;
+    height: 100%;
+    margin-top: -1rem;
+}
+
+.container-image__2 {
+    grid-column: 2 / 8; 
+    grid-row: 3;
+}
+
+.features-product__2 {
+    grid-column: 2 / 8;
+    grid-row: 4 / 5; 
+    height: 100%;
+
+}
+
+.container-image__3 {
+    grid-column: 2 / 8;
+    grid-row: 5; 
+}
+
+.features-product__3 {
+    grid-column: 2 / 8;
+    grid-row: 6;  
+    height: 100%;
+
+}
+
+.container-image__4 {
+    grid-column: 2 / 8;
+    grid-row: 7; 
+}
+
+.features-product__4 {
+    grid-column: 2 / 8;
+    grid-row: 8; 
+    height: 100%;
+
+}
+
+.container-image__5 {
+    grid-column: 2 / 8;
+    grid-row: 9; 
+
+}
+
+.features-product__5 {
+    grid-column: 2 / 8;
+    grid-row: 10; 
+    height: 100%;
+
+}
+
+.container-image__6 {
+    grid-column: 2 / 8;
+    grid-row: 11;
+}
+
+.features-product__6 {
+    grid-column: 2 / 8;
+    grid-row: 12;
+    height: 100%;
+
+}
+}
+
+/* aqui termina la primer seccion */
+
+/* aqui comienza la ultima seccion */
+
+@media (max-width: 600px) {
+.principal-responsive {
+    width: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+@media (max-width: 903px) {
+#estilo-button {
+    width: 15rem;
+}
+}
+
+@media (max-width: 668px) {
+
+#Categorias-style {
+    display: flex;
+    margin-top: 20rem;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.ultimas-categorias {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    column-gap: .5rem;
+    row-gap: 1.2rem;
+    margin-top: 5rem;
+    }
+
+.media-ajuste-1 {
+    grid-column: 2 / 6;
+    grid-row: 1;
+}
+
+.media-ajuste-2 {
+    grid-column: 2 / 6;
+    grid-row: 2; 
+}
+
+.media-ajuste-3 {
+    grid-column: 2 / 6;
+    grid-row: 3; 
+}
+} 
+
+
+/* aqui termina la ultima seccion */
