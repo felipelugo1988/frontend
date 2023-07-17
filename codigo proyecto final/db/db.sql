@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS editoriales;
+
+USE editoriales;
+
+CREATE TABLE autor (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45) DEFAULT NULL,
+    salary INT(11) DEFAULT NULL,
+    PRIMARY KEY(id)
+);
+
+DESCRIBE autor;
